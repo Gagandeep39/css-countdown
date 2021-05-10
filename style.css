@@ -60,7 +60,7 @@ body {
 }
 
 .nums span.out {
-  transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(180deg);
   animation: goOut 0.2s ease-in-out;
 }
 
