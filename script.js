@@ -3,7 +3,21 @@ const counter = document.querySelector('.counter');
 const finalMessage = document.querySelector('.final');
 const replay = document.querySelector('#replay');
 
+replay.addEventListener('click', () => resetDOM());
+
 runAnimation();
+
+function resetDOM() {
+  // Reset DOM
+  counter.classList.remove('hide');
+  finalMessage.classList.remove('show');
+
+  // Reset classes
+  nums.forEach((num) => (num.classList.value = ''));
+
+  // Add in class for animation on 3
+  nums[0].classList.add('in');
+}
 
 function runAnimation() {
   nums.forEach((num, index) => {
